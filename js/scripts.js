@@ -6,9 +6,13 @@ $(document).ready(function() {
   });
 
   $(".clickable").click(function() {
-    $(".initially-showing").slideToggle();
-    $(".initially-hidden").slideToggle();
+    $(".initially-hidden").fadeOut();
+    $(".initially-showing").fadeIn();
   });
 
+  $(".clickable2").click(function() {
+    $(".initially-hidden").fadeIn();
+    $(".initially-showing").fadeOut();
+  });
 
 })
